@@ -1,10 +1,35 @@
+:root {
+  --switch-height: 40px;
+  --switch-width: 24px;
+  --slider-height: 16px;
+  --slider-width: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.weather-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.weather-info-div {
+}
+
 /* ---- Slider ---- */
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: var(--switch-height);
+  height: var(--switch-width);
 }
 
 /* Hide default HTML checkbox */
@@ -22,20 +47,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
+  background-color: rgb(165, 165, 165);
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: var(--slider-height);
+  width: var(--slider-width);
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -48,12 +71,9 @@ input:checked + .slider {
 } */
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(var(--slider-width));
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
