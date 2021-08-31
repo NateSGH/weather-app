@@ -62,9 +62,7 @@ function printWeatherData(weatherObj) {
   }`;
 
   const windSpeed = document.createElement('p');
-  windSpeed.innerText = `Wind: ${weatherObj.wind.speed} ${
-    units === 'metric' ? 'm/s' : 'miles/hour'
-  }`;
+  windSpeed.innerText = `Wind: ${weatherObj.wind.speed} ${units === 'metric' ? 'm/s' : 'mi/h'}`;
 
   const sunriseTime = document.createElement('p');
   sunriseTime.innerText = `Sunrise: ${format(fromUnixTime(weatherObj.sys.sunrise), 'kk:mm')}`;
