@@ -98,10 +98,6 @@ async function getWeatherByCityName(city) {
   );
   const weatherData = await response.json();
 
-  console.log(weatherData);
-
-  console.log(`${weatherData.name},${city}`);
-
   if (weatherData.name === capitilizeString(city)) {
     currentWeatherCity = city;
 
@@ -118,6 +114,7 @@ function toggleUnits() {
     units = 'metric';
   }
   getWeatherByCityName(currentWeatherCity);
+  console.log(process.env.OW_API_KEY);
 }
 
 submitBtn.addEventListener('click', () => {
