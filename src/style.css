@@ -63,6 +63,13 @@ button:active {
   transform: scale(0.95);
 }
 
+#city-error {
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 20px 0 0;
+}
+
 .weather-wrapper {
   background-color: rgba(94, 93, 93, 0.4);
   box-shadow: 5px 5px 610px rgba(0, 0, 0, 0.2), 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -103,7 +110,7 @@ button:active {
 
 .weather-side-info {
   margin-top: 35px;
-  min-width: 135px;
+  min-width: 145px;
 }
 
 .city-name {
@@ -123,14 +130,28 @@ button:active {
   margin: 30px 0px 40px 0px;
 }
 
-/* ---- Slider ---- */
+.switch-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.switch-container p {
+  font-family: inherit;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+/* ---- Switch slider ---- */
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
   width: var(--switch-height);
   height: var(--switch-width);
-  margin: 20px;
+  margin: 0px 5px;
 }
 
 /* Hide default HTML checkbox */
@@ -163,9 +184,9 @@ button:active {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+/* input:checked + .slider {
   background-color: rgba(91, 150, 197, 0.9);
-}
+} */
 
 /* input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;

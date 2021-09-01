@@ -24,6 +24,8 @@ function printWeatherData(weatherObj) {
   const container = document.querySelector('.weather-container');
   container.innerHTML = '';
 
+  document.getElementById('city-error').innerText = '';
+
   const weatherIconWrapper = document.createElement('div');
   weatherIconWrapper.classList.add('weather-icon-div');
 
@@ -97,9 +99,16 @@ async function getWeatherByCityName(city) {
   const weatherData = await response.json();
 
   console.log(weatherData);
-  currentWeatherCity = city;
 
-  printWeatherData(weatherData);
+  console.log(`${weatherData.name},${city}`);
+
+  if (weatherData.name === capitilizeString(city)) {
+    currentWeatherCity = city;
+
+    printWeatherData(weatherData);
+  } else if (weatherData.message === 'city not found') {
+    document.getElementById('city-error').innerText = `City ${city} not found`;
+  }
 }
 
 function toggleUnits() {
