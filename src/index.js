@@ -114,7 +114,6 @@ function toggleUnits() {
     units = 'metric';
   }
   getWeatherByCityName(currentWeatherCity);
-  console.log(process.env.OW_API_KEY);
 }
 
 submitBtn.addEventListener('click', () => {
