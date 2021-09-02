@@ -9,6 +9,12 @@
   --btn-hover-color: rgba(128, 128, 128, 0.7);
 }
 
+/* Photo by Lua Morales from Pexels */
+html {
+  background: url('/src/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -80,9 +86,9 @@ button:active {
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  transform: translateX(-50%) translatey(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .weather-container {

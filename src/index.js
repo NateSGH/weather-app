@@ -10,12 +10,6 @@ const unitSlider = document.getElementById('unit-slider');
 let units = 'metric';
 let currentWeatherCity = '';
 
-// Photo by Lua Morales from Pexels
-document.querySelector('html').style.background =
-  "url('/src/images/background.jpg') no-repeat center center fixed";
-
-document.querySelector('html').style.backgroundSize = 'cover';
-
 function capitilizeString(phrase) {
   return phrase.charAt(0).toUpperCase() + phrase.slice(1);
 }
@@ -30,7 +24,7 @@ function printWeatherData(weatherObj) {
   weatherIconWrapper.classList.add('weather-icon-div');
 
   const weatherIcon = document.createElement('img');
-  weatherIcon.src = `http://openweathermap.org/img/wn/${weatherObj.weather[0].icon}@4x.png`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${weatherObj.weather[0].icon}@4x.png`;
 
   const weather = document.createElement('p');
   weather.innerText = capitilizeString(weatherObj.weather[0].description);
