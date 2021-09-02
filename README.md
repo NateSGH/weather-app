@@ -8,7 +8,7 @@ Weather app using the [Open Weather API](https://openweathermap.org/), HTML, CSS
 
 This project is a part of [The Odin Project](https://www.theodinproject.com/)'s curriculum.
 
-##Live Demo
+## Live Demo
 
 - [Link](https://natesgh.github.io/weather-app/)
 
