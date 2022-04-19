@@ -8,12 +8,13 @@ Weather app which display weather forcast for a a specific location.
 - Images for each forecast description
 
 This project is a part of [The Odin Project](https://www.theodinproject.com/)'s curriculum.
+_Practice with JSON, API, async await and api fetch calls_
 
 ## Build With
 
 - HTML
 - CSS
-- Vanilla JS (with async await and api fetch calls)
+- JavaScript (with async await and api fetch calls)
 - [Open Weather API](https://openweathermap.org/)
 - Webpack
 
