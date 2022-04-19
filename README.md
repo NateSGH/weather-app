@@ -1,12 +1,21 @@
-# weather-app
+# Weather app
 
-Weather app using the [Open Weather API](https://openweathermap.org/), HTML, CSS and Vanilla JS (async await and api fetch calls), webpack.
+Weather app which display weather forcast for a a specific location.
 
-- Display data in metric or imperial units.
+- Display weather forcast
+- Display data in metric or imperial units
 - Search for a specific location by city name
 - Images for each forecast description
 
 This project is a part of [The Odin Project](https://www.theodinproject.com/)'s curriculum.
+
+## Build With
+
+- HTML
+- CSS
+- Vanilla JS (with async await and api fetch calls)
+- [Open Weather API](https://openweathermap.org/)
+- Webpack
 
 ## Live Demo
 
